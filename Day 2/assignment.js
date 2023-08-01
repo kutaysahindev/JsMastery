@@ -16,15 +16,39 @@ function percentageOfWorld1(population) {
   return (population / 7900) * 100;
 }
 
-console.log(percentageOfWorld1(199), percentageOfWorld1(248));
+// console.log(percentageOfWorld1(199), percentageOfWorld1(248));
 
-const percentageOfWorld2 = function (population) {
-  return (population / 7900) * 100;
-};
+// const percentageOfWorld2 = function (population) {
+//   return (population / 7900) * 100;
+// };
 
-console.log(percentageOfWorld2(199), percentageOfWorld2(248));
+// console.log(percentageOfWorld2(199), percentageOfWorld2(248));
 
-// 3
+// // 3
 
-const percentageOfWorld3 = (population) => (population / 7900) * 100;
-console.log(percentageOfWorld3(199), percentageOfWorld3(248));
+// const percentageOfWorld3 = (population) => (population / 7900) * 100;
+// console.log(percentageOfWorld3(199), percentageOfWorld3(248));
+
+// 4
+
+// function describePopulation(country, population) {
+//   return `${country} has ${population} million people, which is about ${percentageOfWorld1(
+//     population
+//   )}% of the world.`;
+// }
+
+// console.log(describePopulation("Turkey", 85));
+
+// 5
+const populations = [10, 20, 30, 40];
+
+console.log(populations.length === 4 ? true : false);
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
+
+console.log(percentages);
