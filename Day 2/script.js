@@ -30,3 +30,41 @@
 //   calcAge(years[2]),
 //   calcAge(years[3])
 // );
+
+// Objects
+
+// const Guy = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   age: 27,
+//   friends: ["Martha", "Steward", "Peter"],
+// };
+
+// console.log(
+//   `${Guy.firstName} has ${Guy.friends.length} friends, and his best friend is called ${Guy.friends[0]}.`
+// );
+
+// this keyword
+
+const Guy = {
+  name: "Jonas",
+  surName: "Schmedtmann",
+  birthYear: 2000,
+  hasDriversLicense: false,
+
+  calcAge: function () {
+    this.age = 2023 - this.birthYear;
+    return this.age;
+  },
+
+  summarize: function () {
+    console.log(
+      `${this.name} is a ${this.calcAge()}-year old teacher, and he ${
+        this.hasDriversLicense == true ? "has a" : "doesn't have a"
+      } drivers license.`
+    );
+  },
+};
+
+console.log(Guy.calcAge());
+Guy.summarize();

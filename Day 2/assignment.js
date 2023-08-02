@@ -40,15 +40,42 @@ function percentageOfWorld1(population) {
 // console.log(describePopulation("Turkey", 85));
 
 // 5
-const populations = [10, 20, 30, 40];
+// const populations = [10, 20, 30, 40];
 
-console.log(populations.length === 4 ? true : false);
+// console.log(populations.length === 4 ? true : false);
 
-const percentages = [
-  percentageOfWorld1(populations[0]),
-  percentageOfWorld1(populations[1]),
-  percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[3]),
-];
+// const percentages = [
+//   percentageOfWorld1(populations[0]),
+//   percentageOfWorld1(populations[1]),
+//   percentageOfWorld1(populations[2]),
+//   percentageOfWorld1(populations[3]),
+// ];
 
-console.log(percentages);
+// console.log(percentages);
+
+// 6
+
+// const neighbours = ["Greece", "Albenia", "Italy"];
+
+// neighbours.push("Utopia");
+// neighbours.pop();
+// if (!neighbours.includes("Germany"))
+//   console.log("Probably not a central European country :D");
+// neighbours[1] = "Turkey";
+// console.log(neighbours);
+
+// 7
+
+// const myCountry = {
+//   country: "Turkey",
+//   capital: "Ankara",
+//   language: "Turkish",
+//   population: 85,
+//   neighbours: ["Bulgaria", "Greece", "Georgia"],
+// };
+
+// myCountry["population"] += 2;
+
+// console.log(
+//   `${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+// );
