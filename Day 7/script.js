@@ -25,12 +25,35 @@
 
 // Example
 
-if (!numProducts) deleteShoppingCart();
+// if (!numProducts) deleteShoppingCart();
 
-var numProducts = 10;
+// var numProducts = 10;
 
-function deleteShoppingCart() {
-  console.log("All products deleted!");
-}
+// function deleteShoppingCart() {
+//   console.log("All products deleted!");
+// }
 
 // So, in this example, since the initial value of var is undefined, it's a falsy value, and it triggers the if statement.
+
+const jonas = {
+  year: 1991,
+  calcAge: function () {
+    console.log(2023 - this.year);
+  },
+};
+
+jonas.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+
+matilda.calcAge = jonas.calcAge;
+matilda.calcAge();
+
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+
+addExpr(2, 4);
